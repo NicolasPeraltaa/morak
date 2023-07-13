@@ -18,10 +18,7 @@
 /* CSS  */
 
 .back {
-    background-image: url(../assets/img/tech-daily-UODNyThs0vg-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    
+    background-color: aliceblue;
 
 }
 header div {
@@ -59,33 +56,41 @@ header div {
 
 }
 .section-principal {
-    background-color: silver;
-    font-size: 20px;
     margin-left: 15px;
     margin-right: 15px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    overflow: hidden;
     text-align: center;
-    margin-bottom: 75px;
+    margin-bottom: 20px;
+    margin-top: 20px;
    
 }
 .tituloh1 {
     justify-content: center;
     font-family: tituloh1;
-    font-weight: 800;
     text-decoration: solid;
     background-color: lightgreen;
+    margin-top: -19px;
     
+}
+
+.tituloh1-contacto{
+    justify-content: center;
+    font-family: tituloh1;
+    text-decoration: solid;
+    background-color: lightgreen;
 }
 
 .present-apple{
     text-decoration: none;
-
 }
-
+.section-principal div h2 {
+    font-weight: bolder;
+    font-size: 29px;
+}
+.section-texto-principal div {
+    font-weight: bolder;
+    font-size: 29px;
+    
+}
 
 .main-index {
     display: grid;
@@ -161,22 +166,7 @@ text-align: center;
     font-family: tituloh1;
     color: black;
 }
-footer div {
-    display: flex;
-    flex-direction: row;
-}
-.redes-telefono {
-    display: flex;
-    justify-content: right;
-    margin-right: 952px;
-    margin-top: 25px;
 
-}
-.ubicacion-footer {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 20px;
-    justify-content: center;
-}
 
 .section-apple .back-iphone13 {
     background-image: url(../assets/img/iphone13foto.jpg);
@@ -229,7 +219,8 @@ footer div {
     font-family: navbarfuente;
     font-weight: normal;
     margin-bottom: 35px;
-    color: #16A6E0;
+    color: black;
+    margin-top: 20px;
 }   
 
 
@@ -246,6 +237,7 @@ footer div {
 .contact-body{
     min-height: 100vh;
     background: url(../assets/img/background.jpg) no-repeat;
+    background-size: 100%;
     }
 
 .contact-main {
@@ -357,12 +349,7 @@ footer div {
     background: #0582E3;
 }
 
-.redes-contacto {
-    display: flex;
-    flex-direction: row;
-    width: 1.875rem;
-    margin: 250px 1000px;
-}
+
 .redes-contacto-nueva {
     display: flex;
     flex-direction: row;
@@ -373,6 +360,7 @@ footer div {
     font-size: 30px;
     
 }
+/* fin estilos contacto */
 .footer-nueva {
     background-color: transparent;
 }
@@ -383,18 +371,77 @@ footer div {
 }
 footer {
 background-color: lightgreen;}
-
-/* fin estilos contacto */
-
-.fondo-main {
-    background-image: url(../assets/img/apple-gff2d71666_1280.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .presentacion-media {
     display: none;
 }
+
+/* NUEVO FOOTER */
+
+.footer-clean {
+    padding:50px 10px;
+    background-color:#fff;
+    color:black;
+    margin-left: 3%;
+    background-color: lightgreen;
+    
+  }
+  
+  .footer-clean h3 {
+    margin-top:0;
+    margin-bottom:12px;
+    margin-left: 15px;
+    font-weight:bold;
+    font-size:16px;
+  }
+  
+  .footer-clean ul {
+    padding:0;
+    list-style:none;
+    line-height:1.6;
+    font-size:14px;
+    margin-bottom:0;
+    gap: 10%;
+  }
+  
+  .footer-clean ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+    
+  }
+  
+  .footer-clean ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-clean .item.social {
+    text-align:right;
+  }
+
+  .footer-clean .item.social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin-left:10px;
+    margin-top:22px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-clean .item.social > a:hover {
+    opacity:0.9;
+  }
+  .footer-clean .copyright {
+    margin-top:14px;
+    margin-bottom:0;
+    font-size:13px;
+    opacity:0.6;
+  }
 
 
 /* INICIO DE MEDIA Q */
@@ -408,19 +455,13 @@ background-color: lightgreen;}
         justify-content: center;
         align-items: center;
     }
-    .fondo-main{
-        background-color: #000;
-    }
     .section-principal{
         font-size: 15px;
-        font-weight: 200;
     }
-    .h2-presentacion{
-        font-size: 18px;
+    .section-texto-principal{
+        font-size: 15px;
         font-style: italic;
-        
     }
-
 }
 
 @media (max-width:375px){
@@ -433,6 +474,30 @@ background-color: lightgreen;}
 
 @media (max-width:784px){
     .main-index{
-        background-color: black;
+        background-color: aliceblue;
     }
 }
+@media (max-width:991px) {
+    .footer-clean .item.social > a {
+      margin-top:40px;
+    }
+  }
+  
+  @media (max-width:767px) {
+    .footer-clean .item.social > a {
+      margin-top:10px;
+    }
+  }
+  @media (max-width:767px) {
+    .footer-clean .item {
+      text-align:center;
+      padding-bottom:20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer-clean .item.social {
+      text-align:center;
+    }
+  }
+
