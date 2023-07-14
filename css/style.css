@@ -18,7 +18,6 @@
 
 
 /* CSS  */
-
 .back {
     background-color: aliceblue;
 
@@ -76,6 +75,13 @@ header div {
     text-decoration: solid;
     background-color: lightgreen;
     margin-top: -19px;
+
+}
+.tituloh1-index{
+    justify-content: center;
+    font-family: tituloh1;
+    text-decoration: solid;
+    background-color: lightgreen;
 
 }
 
