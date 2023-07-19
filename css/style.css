@@ -74,7 +74,6 @@ header div {
     font-family: tituloh1;
     text-decoration: solid;
     background-color: lightgreen;
-    margin-top: -19px;
 
 }
 .tituloh1-index{
@@ -126,7 +125,7 @@ header div {
 
 .present-apple {
     grid-area: apple;
-    background-image: url(../assets/img/photo-1606041011872-596597976b25.avif);
+    background-image: url("../assets/img/photo-1606041011872-596597976b25.avif");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -166,7 +165,7 @@ header div {
 
 .present-inicio {
     grid-area: sams;
-    background-image: url(../assets/img/samsunggggg.jpg);
+    background-image: url("../assets/img/samsunggggg.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -188,7 +187,7 @@ header div {
 
 
 .section-apple .back-iphone13 {
-    background-image: url(../assets/img/iphone13foto.jpg);
+    background-image: url("../assets/img/iphone13foto.jpg");
     width: 100vw;
     height: 500px;
     background-repeat: no-repeat;
@@ -216,9 +215,10 @@ header div {
     width: 15.625rem;
     background-color: lightgreen;
     padding: .3125rem;
-    box-shadow: 5px 5px 5px black;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: .3125rem;
     justify-items: center;
+    margin-bottom: 30px;
 }
 
 .clase-img-iphone {
@@ -260,14 +260,10 @@ header div {
 
 .contact-body {
     min-height: 100vh;
-    background: url(../assets/img/background.jpg) no-repeat;
+    background: url("../assets/img/background.jpg") no-repeat;
     background-size: 100%;
 }
 
-.contact-main {
-    font-family: 'Poppins', sans-serif;
-
-}
 
 .contacto-section {
     width: 100%;
@@ -358,7 +354,6 @@ header div {
 }
 
 .contacto-form .send-btn {
-    float: left;
     background: #2E94E3;
     color: white;
     border: none;
@@ -480,6 +475,11 @@ footer {
 
 
 /* INICIO DE MEDIA Q */
+@media (max-width:991px) {
+    .footer-clean .item.social>a {
+        margin-top: 40px;
+    }
+}
 @media (max-width: 784px) {
     .container-cards {
         grid-template-columns: auto;
@@ -500,25 +500,8 @@ footer {
         font-size: 15px;
         font-style: italic;
     }
-}
-
-@media (max-width:375px) {
-    .navbar {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-}
-
-@media (max-width:784px) {
     .main-index {
         background-color: aliceblue;
-    }
-}
-
-@media (max-width:991px) {
-    .footer-clean .item.social>a {
-        margin-top: 40px;
     }
 }
 
@@ -526,25 +509,26 @@ footer {
     .footer-clean .item.social>a {
         margin-top: 10px;
     }
-}
-
-@media (max-width:767px) {
+    .footer-clean .item.social {
+        text-align: center;
+    }
     .footer-clean .item {
         text-align: center;
         padding-bottom: 20px;
     }
-}
 
-@media (max-width: 768px) {
-    .footer-clean .item.social {
-        text-align: center;
-    }
 }
-
 @media (max-width:584px) {
     footer {
         display: flex;
         flex-direction: column;
         width: 100%;
+    }
+}
+@media (max-width:375px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
