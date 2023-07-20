@@ -29,36 +29,26 @@ header div {
     justify-content: center;
 
 }
-
-.header-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-    background-color: black;
-
-
-}
-
-.header-nav ul li a {
-    text-decoration: none;
+.navbar-brand{
+    font-family: tituloh1;
+    margin-left: 20px;
     color: white;
-    font-size: 18px;
-    font-weight: bold;
-    display: flex;
-    flex-direction: row;
-
-
-
+    font-size: 28px;
+    margin-right: 50px;
 }
-
-.header-nav ul {
-    display: flex;
-    justify-content: center;
-    gap: 35px;
+.dropdown-menu li a{
     font-family: navbarfuente;
-
+    color: black;
+    font-size: 16px;
+    m
+}
+.nav-link{
+    font-family: navbarfuente;
+    font-size: 20px;
+    color: white;
 
 }
+
 
 .section-principal {
     margin-left: 15px;
@@ -244,7 +234,8 @@ header div {
     font-weight: normal;
     margin-bottom: 35px;
     color: black;
-    margin-top: 20px;
+    margin-top: 50px;
+    
 }
 
 
