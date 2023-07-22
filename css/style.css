@@ -29,6 +29,9 @@ header div {
     justify-content: center;
 
 }
+
+/* INICIO ESTILOS NAVBAR */
+
 .navbar-brand{
     font-family: tituloh1;
     margin-left: 20px;
@@ -40,7 +43,7 @@ header div {
     font-family: navbarfuente;
     color: black;
     font-size: 16px;
-    m
+    
 }
 .nav-link{
     font-family: navbarfuente;
@@ -49,37 +52,7 @@ header div {
 
 }
 
-
-.section-principal {
-    margin-left: 15px;
-    margin-right: 15px;
-    text-align: center;
-    margin-bottom: 20px;
-    margin-top: 20px;
-
-}
-
-.tituloh1 {
-    justify-content: center;
-    font-family: tituloh1;
-    text-decoration: solid;
-    background-color: lightgreen;
-
-}
-.tituloh1-index{
-    justify-content: center;
-    font-family: tituloh1;
-    text-decoration: solid;
-    background-color: lightgreen;
-
-}
-
-.tituloh1-contacto {
-    justify-content: center;
-    font-family: tituloh1;
-    text-decoration: solid;
-    background-color: lightgreen;
-}
+/* INICIO INDEX-HTML CON SUS RESPECTIVOS GRIDS */
 
 .present-apple {
     text-decoration: none;
@@ -250,141 +223,41 @@ header div {
 }
 
 .contact-body {
-    min-height: 100vh;
-    background: url("../assets/img/background.jpg") no-repeat;
+    background: url("../assets/img/tech-daily-UODNyThs0vg-unsplash.jpg") no-repeat;
     background-size: 100%;
 }
 
-
-.contacto-section {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.main-contacto {
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 30px;
 }
 
-.contacto-info {
-    color: #fff;
-    line-height: 65px;
-    padding-left: 50px;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.contacto-info i {
-    margin-right: 20px;
-    font-size: 25px;
-    margin-inline: 25px;
-
-}
-
-.contacto-section,
-.contacto-info,
-.contacto-posicion img {
-    gap: 125px;
-    font-size: 25px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-}
-
-.contacto-form {
-    max-width: 700px;
-    margin-right: 50px;
-    margin-top: 125px;
-}
-
-.contacto-info,
-.contact-form {
-    flex: 1;
-
-}
-
-.contacto-form h3 {
-    color: #fff;
-    text-align: center;
+.bigicon {
     font-size: 35px;
-    text-transform: uppercase;
-    margin-bottom: 30px;
+    color: #36A0FF;
 }
+    
 
-.contacto-form .text-box {
-    background: #000;
-    color: #fff;
-    border: none;
-    width: calc(50% - 10px);
-    height: 50px;
-    padding: 12px;
-    font-size: 15px;
-    border-radius: 5px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    opacity: 0.9;
+
+
+/* fin estilos contacto */
+
+/* FOOTER DE CONTACTO */
+.footer-nueva {
+    background-color: lightgreen;
+    margin-top: 346px;
 }
-
-.contacto-form .text-box:first-child {
-    margin-right: 15px;
-
+.texto-contacto {
+    color: black;
+    text-align: center;
 }
-
-.contacto-form textarea {
-    background: #000;
-    color: #fff;
-    border: none;
-    width: 100%;
-    padding: 12px;
-    font-size: 15px;
-    min-height: 200px;
-    max-height: 400px;
-    resize: vertical;
-    border-radius: 5px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    opacity: 0.9;
-}
-
-.contacto-form .send-btn {
-    background: #2E94E3;
-    color: white;
-    border: none;
-    width: 150px;
-    height: 40px;
-    font-size: 15px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-    transition-property: background;
-    transition-property: background;
-}
-
-.contacto-form .send-btn:hover {
-    background: #0582E3;
-}
-
-
-.redes-contacto-nueva {
+.redes-contacto-nueva{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 225px;
-    background-color: transparent;
-    font-size: 30px;
-
-}
-
-/* fin estilos contacto */
-.footer-nueva {
-    background-color: lightgreen;
-}
-
-.texto-contacto {
-    color: black;
-    margin-right: 82px;
 }
 
 footer {
@@ -395,7 +268,7 @@ footer {
     display: none;
 }
 
-/* NUEVO FOOTER */
+/* NUEVO FOOTER DE TODAS LAS DEMAS PAGES */
 
 .footer-clean {
     padding: 50px 10px;
@@ -466,6 +339,15 @@ footer {
 
 
 /* INICIO DE MEDIA Q */
+@media (max-width:1351px){
+    .contact-body{
+        background-image: url("../assets/img/ifone-13-mini.jpg");
+        width: 100%;
+        background-size: cover;
+    }
+}
+
+
 @media (max-width:991px) {
     .footer-clean .item.social>a {
         margin-top: 40px;
@@ -493,6 +375,11 @@ footer {
     }
     .main-index {
         background-color: aliceblue;
+    }
+    .contact-body{
+        background-image: none;
+        background-color: lightgreen;
+        
     }
 }
 

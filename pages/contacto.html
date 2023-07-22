@@ -53,30 +53,78 @@
             </div>
         </nav>
     </header>
-    <main class="contact-main">
+    <!-- FIN DE HEADER -->
 
-        <!-- CONTACTO SECCION -->
+    <!-- inicio main -->
+    <main class="main-contacto">
+        <div class="container-contacto">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class=" well well-sm">
+                        <form class="form-horizontal" method="post">
+                            <fieldset>
+                                <legend class="text-center header text-dark bold-text">CONTACTANOS!</legend>
 
-        <div class="contacto-section">
-            <div class="contacto-info">
-                <div class="contacto-posicion">
-                    <img src="../assets/img/correo-electronico.png" alt="">moraKtienda@email.com
-                    <img src="../assets/img/llamada-telefonica (1).png" alt=""> +598 92 031 694
-                    <img src="../assets/img/reloj-contorno-circular.png" alt=""> Lun - Vier 8:00am a 19:00pm
-                </div>
-                <div class="contacto-form">
-                    <h3>CONTACTANOS</h3>
-                    <form class="contact" action="" method="post">
-                        <input type="text" name="Nombre" class="text-box" placeholder="Tu Nombre" required>
-                        <input type="text" name="email" class="text-box" placeholder="Tu Email" required>
-                        <textarea name="Mensaje" rows="5" placeholder="Tu Mensaje" required></textarea>
-                        <input type="submit" name="Enviar" class="send-btn" value="enviar">
-                    </form>
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i
+                                            class="fa fa-user bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <input id="fname" name="name" type="text" placeholder="Nombre"
+                                            class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i
+                                            class="fa fa-user bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <input id="lname" name="name" type="text" placeholder="Apellidos"
+                                            class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i
+                                            class="fa fa-envelope-o bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <input id="email" name="email" type="text" placeholder="Direccion de email"
+                                            class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i
+                                            class="fa fa-phone-square bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <input id="phone" name="phone" type="text" placeholder="Telefono"
+                                            class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i
+                                            class="fa fa-pencil-square-o bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <textarea class="form-control" id="message" name="message"
+                                            placeholder="Deja tu mensaje lo mas detallado posible y seras contestado a la brevedad en un plazo maximo de 7 dias."
+                                            rows="7"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="col-md-12 text-center">
+                                        <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-
     </main>
+    <!-- fin de main -->
+
+
     <footer class="footer-nueva">
         <div class="redes-contacto-nueva">
             <img src="../assets/img/pin-de-mapa.png" alt="">
@@ -85,6 +133,7 @@
             <img src="../assets/img/instagram.png" alt="">
 
     </footer>
+
 </body>
 
 </html>
