@@ -1,0 +1,70 @@
+/* INICIO DE MEDIA Q */
+@media (max-width:1351px){
+    .contact-body{
+        background-image: url("../assets/img/ifone-13-mini.jpg");
+        width: 100%;
+        background-size: cover;
+    }
+}
+@media (max-width:991px) {
+    .footer-clean .item.social>a {
+        margin-top: 40px;
+    }
+}
+@media (max-width: 784px) {
+    .container-cards {
+        grid-template-columns: auto;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-principal {
+        font-size: 15px;
+    }
+
+    .section-texto-principal {
+        font-size: 15px;
+        font-style: italic;
+    }
+    .main-index {
+        background-color: aliceblue;
+    }
+    .contact-body{
+        background-image: none;
+        background-color: lightgreen;
+        
+    }
+}
+
+@media (max-width:767px) {
+    .footer-clean .item.social>a {
+        margin-top: 10px;
+    }
+    .footer-clean .item.social {
+        text-align: center;
+    }
+    .footer-clean .item {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+}
+@media (max-width:584px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+@media (max-width:375px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,291 @@
+
+
+
+
+
+/* CSS  */
+
+
+/* INICIO ESTILOS NAVBAR */
+
+
+
+/* INICIO INDEX-HTML CON SUS RESPECTIVOS GRIDS */
+
+/* .main-index {
+    display: grid;
+    grid-template-columns: repeat(3, 500px);
+    grid-template-areas:
+        "present present present "
+        "apple apple sams "
+        "apple apple sams ";
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+/* FIJARSE A VER SI SACO ESTO */
+
+/* .section-principal {
+    grid-area: present;
+} */
+
+
+.present-inicio {
+    
+
+}
+
+.subtitulo-sams {
+
+}
+
+/* NUEVO ESTILOS PARA VENTAS APPLE, SAMSUNG Y MARCAS  */
+/* me quede aca, seguir pasando a SASS desde aca */
+
+
+/* .container-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 25%);
+    grid-auto-rows: auto;
+    justify-content: center;
+    gap: 100px;
+    justify-items: center;
+ */
+
+
+
+/* .cards {
+    width: 15.625rem;
+    background-color: lightgreen;
+    padding: .3125rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: .3125rem;
+    justify-items: center;
+    margin-bottom: 30px;
+} */
+
+/* .clase-img-iphone {
+    width: 100%;
+    overflow: hidden;
+
+} */
+
+/* .clase-img-iphone img {
+    width: 100%;
+    object-fit: cover;
+
+} */
+
+/* .cards div h3 {
+    padding: .0375rem 0rem;
+} */
+
+/* .section-texto-principal {
+    text-align: center;
+    font-size: 19px;
+    font-family: navbarfuente;
+    font-weight: normal;
+    margin-bottom: 35px;
+    color: black;
+    margin-top: 50px;    
+} */
+
+
+/*  INICIO ESTILOS CONTACTO */
+/* .h2-contacto {
+    color: lightgreen;
+    text-align: center;
+    text-decoration: solid;
+    font-weight: bolder;
+    font-family: navbarfuente;
+    font-size: 16px;
+/* } */ FIJARSE SI ESTO VA O NO */
+
+/* .contact-body {
+    background: url("../assets/img/tech-daily-UODNyThs0vg-unsplash.jpg") no-repeat;
+    background-size: 100%;
+}
+
+.main-contacto {
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 30px;
+}
+
+
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
+}
+     */
+
+
+
+/* fin estilos contacto */
+
+/* FOOTER DE CONTACTO */
+/* .footer-nueva {
+    background-color: lightgreen;
+    margin-top: 346px;
+} */
+.texto-contacto {
+    color: black;
+    text-align: center;
+}
+/* .redes-contacto-nueva{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: lightgreen;
+}
+
+.presentacion-media {
+    display: none;
+} */
+
+/* NUEVO FOOTER DE TODAS LAS DEMAS PAGES */
+
+/* .footer-clean {
+    padding: 50px 10px;
+    background-color: #fff;
+    color: black;
+
+    background-color: lightgreen;
+
+} */
+
+/* .footer-clean h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.footer-clean ul {
+    padding: 0;
+    list-style: none;
+    line-height: 1.6;
+    font-size: 14px;
+    margin-bottom: 0;
+    gap: 10%;
+}
+
+.footer-clean ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+
+} */
+
+/* .footer-clean ul a:hover {
+    opacity: 1;
+} */
+
+/* .footer-clean .item.social {
+    text-align: right;
+} */
+
+.footer-clean .item.social>a {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin-left: 10px;
+    margin-top: 22px;
+    color: inherit;
+    opacity: 0.75;
+}
+
+.footer-clean .item.social>a:hover {
+    opacity: 0.9;
+}
+
+.footer-clean .copyright {
+    margin-top: 14px;
+    margin-bottom: 0;
+    font-size: 13px;
+    opacity: 0.6;
+}
+
+
+/* INICIO DE MEDIA Q */
+@media (max-width:1351px){
+    .contact-body{
+        background-image: url("../assets/img/ifone-13-mini.jpg");
+        width: 100%;
+        background-size: cover;
+    }
+}
+
+
+@media (max-width:991px) {
+    .footer-clean .item.social>a {
+        margin-top: 40px;
+    }
+}
+@media (max-width: 784px) {
+    .container-cards {
+        grid-template-columns: auto;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-principal {
+        font-size: 15px;
+    }
+
+    .section-texto-principal {
+        font-size: 15px;
+        font-style: italic;
+    }
+    .main-index {
+        background-color: aliceblue;
+    }
+    .contact-body{
+        background-image: none;
+        background-color: lightgreen;
+        
+    }
+}
+
+@media (max-width:767px) {
+    .footer-clean .item.social>a {
+        margin-top: 10px;
+    }
+    .footer-clean .item.social {
+        text-align: center;
+    }
+    .footer-clean .item {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+}
+@media (max-width:584px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+@media (max-width:375px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

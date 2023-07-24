@@ -1,412 +1,101 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* FUENTES */
-
 @font-face {
-    font-family: tituloh1;
-    src: url(../assets/fonts/LondrinaSolid-Black.ttf);
+  font-family: tituloh1;
+  src: url(../assets/fonts/LondrinaSolid-Black.ttf);
 }
-
 @font-face {
-    font-family: navbarfuente;
-    src: url(../assets/fonts/Syne-SemiBold.ttf);
+  font-family: navbarfuente;
+  src: url(../assets/fonts/Syne-SemiBold.ttf);
 }
-
-
-/* CSS  */
 .back {
-    background-color: aliceblue;
-
-}
-
-header div {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-
-}
-
-/* INICIO ESTILOS NAVBAR */
-
-.navbar-brand{
-    font-family: tituloh1;
-    margin-left: 20px;
-    color: white;
-    font-size: 28px;
-    margin-right: 50px;
-}
-.dropdown-menu li a{
-    font-family: navbarfuente;
-    color: black;
-    font-size: 16px;
-    
-}
-.nav-link{
-    font-family: navbarfuente;
-    font-size: 20px;
-    color: white;
-
-}
-
-/* INICIO INDEX-HTML CON SUS RESPECTIVOS GRIDS */
-
-.present-apple {
-    text-decoration: none;
-}
-
-.section-principal div h2 {
-    font-weight: bolder;
-    font-size: 29px;
-}
-
-.section-texto-principal div {
-    font-weight: bolder;
-    font-size: 29px;
-
-}
-
-.main-index {
-    display: grid;
-    grid-template-columns: repeat(3, 500px);
-    grid-template-areas:
-        "present present present "
-        "apple apple sams "
-        "apple apple sams ";
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-
+  background-color: aliceblue;
 }
 
 .section-principal {
-    grid-area: present;
+  margin-left: 15px;
+  margin-right: 15px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .present-apple {
-    grid-area: apple;
-    background-image: url("../assets/img/photo-1606041011872-596597976b25.avif");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: fit-content;
-    border-radius: 90px 52px 52px 90px;
-    overflow: hidden;
-    padding-top: 50px;
-    margin-bottom: 75px;
+  text-decoration: none;
+}
+
+.section-principal div {
+  font-weight: bolder;
+  font-size: 29px;
+}
+.section-principal h2 {
+  font-weight: bolder;
+  font-size: 29px;
+}
+
+.present-apple {
+  grid-area: apple;
+  background-image: url("../assets/img/photo-1606041011872-596597976b25.avif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: fit-content;
+  border-radius: 90px 52px 52px 90px;
+  overflow: hidden;
+  padding-top: 50px;
+  margin-bottom: 75px;
 }
 
 .present-apple div h3 {
-    font-size: 40px;
-    display: flex;
-    flex-direction: row;
-    background-color: ligh;
-    color: #000;
-    margin-top: 155px;
-    text-align: center;
+  font-size: 40px;
+  display: flex;
+  flex-direction: row;
+  background-color: ligh;
+  color: #000;
+  margin-top: 155px;
+  text-align: center;
 }
 
 .present-inicio div h3 {
-    font-size: 40px;
-    display: flex;
-    flex-direction: row;
-    color: white;
-    margin-top: 155px;
-    text-align: center;
+  font-size: 40px;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  margin-top: 155px;
+  text-align: center;
 }
 
 .subtitulo-apple {
-    text-align: center;
-    font-size: 40px;
-    font-weight: bolder;
-    font-family: tituloh1;
-
+  text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+  font-family: tituloh1;
 }
 
 .present-inicio {
-    grid-area: sams;
-    background-image: url("../assets/img/samsunggggg.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: fit-content;
-    border-radius: 90px 52px 52px 90px;
-    overflow: hidden;
-    padding-top: 50px;
-    margin-bottom: 50px;
-
+  grid-area: sams;
+  background-image: url("../assets/img/samsunggggg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: fit-content;
+  border-radius: 90px 52px 52px 90px;
+  overflow: hidden;
+  padding-top: 50px;
+  margin-bottom: 50px;
 }
 
 .subtitulo-sams {
-    text-align: center;
-    font-size: 40px;
-    font-weight: bolder;
-    font-family: tituloh1;
-    color: black;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+  font-family: tituloh1;
+  color: black;
 }
 
-
-.section-apple .back-iphone13 {
-    background-image: url("../assets/img/iphone13foto.jpg");
-    width: 100vw;
-    height: 500px;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-/* NUEVO ESTILOS PARA VENTAS APPLE, SAMSUNG Y MARCAS */
-
-
-.container-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 25%);
-    grid-auto-rows: auto;
-    justify-content: center;
-    gap: 100px;
-    justify-items: center;
-
-
-}
-
-.cards {
-    width: 15.625rem;
-    background-color: lightgreen;
-    padding: .3125rem;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: .3125rem;
-    justify-items: center;
-    margin-bottom: 30px;
-}
-
-.clase-img-iphone {
-    width: 100%;
-    overflow: hidden;
-
-}
-
-.clase-img-iphone img {
-    width: 100%;
-    object-fit: cover;
-
-}
-
-.cards div h3 {
-    padding: .0375rem 0rem;
-}
-
-.section-texto-principal {
-    text-align: center;
-    font-size: 19px;
-    font-family: navbarfuente;
-    font-weight: normal;
-    margin-bottom: 35px;
-    color: black;
-    margin-top: 50px;
-    
-}
-
-
-/*  INICIO ESTILOS CONTACTO */
-.h2-contacto {
-    color: lightgreen;
-    text-align: center;
-    text-decoration: solid;
-    font-weight: bolder;
-    font-family: navbarfuente;
-    font-size: 16px;
-}
-
-.contact-body {
-    background: url("../assets/img/tech-daily-UODNyThs0vg-unsplash.jpg") no-repeat;
-    background-size: 100%;
-}
-
-.main-contacto {
-    color: #36A0FF;
-    font-size: 27px;
-    padding: 30px;
-}
-
-
-.bigicon {
-    font-size: 35px;
-    color: #36A0FF;
-}
-    
-
-
-
-/* fin estilos contacto */
-
-/* FOOTER DE CONTACTO */
-.footer-nueva {
-    background-color: lightgreen;
-    margin-top: 346px;
-}
-.texto-contacto {
-    color: black;
-    text-align: center;
-}
-.redes-contacto-nueva{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-footer {
-    background-color: lightgreen;
-}
-
-.presentacion-media {
-    display: none;
-}
-
-/* NUEVO FOOTER DE TODAS LAS DEMAS PAGES */
-
-.footer-clean {
-    padding: 50px 10px;
-    background-color: #fff;
-    color: black;
-
-    background-color: lightgreen;
-
-}
-
-.footer-clean h3 {
-    margin-top: 0;
-    margin-bottom: 12px;
-    margin-left: 15px;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-.footer-clean ul {
-    padding: 0;
-    list-style: none;
-    line-height: 1.6;
-    font-size: 14px;
-    margin-bottom: 0;
-    gap: 10%;
-}
-
-.footer-clean ul a {
-    color: inherit;
-    text-decoration: none;
-    opacity: 0.8;
-
-}
-
-.footer-clean ul a:hover {
-    opacity: 1;
-}
-
-.footer-clean .item.social {
-    text-align: right;
-}
-
-.footer-clean .item.social>a {
-    font-size: 24px;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    display: inline-block;
-    text-align: center;
-    border-radius: 50%;
-    border: 1px solid #ccc;
-    margin-left: 10px;
-    margin-top: 22px;
-    color: inherit;
-    opacity: 0.75;
-}
-
-.footer-clean .item.social>a:hover {
-    opacity: 0.9;
-}
-
-.footer-clean .copyright {
-    margin-top: 14px;
-    margin-bottom: 0;
-    font-size: 13px;
-    opacity: 0.6;
-}
-
-
-/* INICIO DE MEDIA Q */
-@media (max-width:1351px){
-    .contact-body{
-        background-image: url("../assets/img/ifone-13-mini.jpg");
-        width: 100%;
-        background-size: cover;
-    }
-}
-
-
-@media (max-width:991px) {
-    .footer-clean .item.social>a {
-        margin-top: 40px;
-    }
-}
-@media (max-width: 784px) {
-    .container-cards {
-        grid-template-columns: auto;
-    }
-
-    .navbar {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .section-principal {
-        font-size: 15px;
-    }
-
-    .section-texto-principal {
-        font-size: 15px;
-        font-style: italic;
-    }
-    .main-index {
-        background-color: aliceblue;
-    }
-    .contact-body{
-        background-image: none;
-        background-color: lightgreen;
-        
-    }
-}
-
-@media (max-width:767px) {
-    .footer-clean .item.social>a {
-        margin-top: 10px;
-    }
-    .footer-clean .item.social {
-        text-align: center;
-    }
-    .footer-clean .item {
-        text-align: center;
-        padding-bottom: 20px;
-    }
-
-}
-@media (max-width:584px) {
-    footer {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-}
-@media (max-width:375px) {
-    .navbar {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-}
+/*# sourceMappingURL=style.css.map */

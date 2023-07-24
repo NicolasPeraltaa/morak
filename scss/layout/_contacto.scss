@@ -1,0 +1,38 @@
+/*  INICIO ESTILOS CONTACTO */
+.contact-body {
+    background: url("../assets/img/tech-daily-UODNyThs0vg-unsplash.jpg") no-repeat;
+    background-size: 100%;
+}
+.main-contacto {
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 30px;
+}
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
+}
+
+/* FOOTER DE CONTACTO */
+.footer-nueva {
+    background-color: lightgreen;
+    margin-top: 346px;
+}
+.texto-contacto {
+    color: black;
+    text-align: center;
+}
+.redes-contacto-nueva{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: lightgreen;
+}
+
+.presentacion-media {
+    display: none;
+}

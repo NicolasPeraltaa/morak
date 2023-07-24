@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* FUENTES */
+
+@font-face {
+    font-family: tituloh1;
+    src: url(../assets/fonts/LondrinaSolid-Black.ttf);
+}
+
+@font-face {
+    font-family: navbarfuente;
+    src: url(../assets/fonts/Syne-SemiBold.ttf);
+}
+
+.back {
+    background-color: aliceblue;
+
+}
+.section-principal {
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.present-apple {
+    text-decoration: none;
+}
+.section-principal{
+    div{
+        font-weight: bolder;
+        font-size: 29px;
+    }
+        h2{
+            font-weight: bolder;
+            font-size: 29px;
+        }        
+}
+.present-apple{
+    grid-area: apple;
+    background-image: url("../assets/img/photo-1606041011872-596597976b25.avif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: fit-content;
+    border-radius: 90px 52px 52px 90px;
+    overflow: hidden;
+    padding-top: 50px;
+    margin-bottom: 75px;
+}
+.present-apple{
+    div{
+        h3{
+            font-size: 40px;
+            display: flex;
+            flex-direction: row;
+            background-color: ligh;
+            color: #000;
+            margin-top: 155px;
+            text-align: center;
+        }
+    }
+}
+.present-inicio{
+    div{
+        h3{
+            font-size: 40px;
+            display: flex;
+            flex-direction: row;
+            color: white;
+            margin-top: 155px;
+            text-align: center;
+        }
+    }
+}
+.subtitulo-apple{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: tituloh1;
+}  
+.present-inicio{
+    grid-area: sams;
+    background-image: url("../assets/img/samsunggggg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: fit-content;
+    border-radius: 90px 52px 52px 90px;
+    overflow: hidden;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+.subtitulo-sams{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: tituloh1;
+    color: black;
+}
