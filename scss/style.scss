@@ -10,11 +10,12 @@
 @import "./layout/navbar";
 @import "./layout/mediaquery";
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 /* FUENTES */
 
 @font-face {
@@ -28,12 +29,16 @@
 }
 
 .back {
-    background: #8e9eab;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #8e9eab;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eef2f3, #8e9eab);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 
 }
+
 .section-principal {
     margin-left: 15px;
     margin-right: 15px;
@@ -41,22 +46,26 @@
     margin-bottom: 20px;
     margin-top: 20px;
 }
+
 .present-apple {
     text-decoration: none;
 }
-.section-principal{
-    div{
+
+.section-principal {
+    div {
         font-weight: bolder;
         font-size: 29px;
     }
-        h2{
-            font-weight: bolder;
-            font-size: 29px;
-        }        
+
+    h2 {
+        font-weight: bolder;
+        font-size: 29px;
+    }
 }
-.present-apple{
+
+.present-apple {
     grid-area: apple;
-    background-image: url("../assets/img/photo-1606041011872-596597976b25.avif");
+    background-image: url("../assets/img/ifone-13-mini.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -66,9 +75,10 @@
     padding-top: 50px;
     margin-bottom: 75px;
 }
-.present-apple{
-    div{
-        h3{
+
+.present-apple {
+    div {
+        h3 {
             font-size: 40px;
             display: flex;
             flex-direction: row;
@@ -79,9 +89,10 @@
         }
     }
 }
-.present-inicio{
-    div{
-        h3{
+
+.present-inicio {
+    div {
+        h3 {
             font-size: 40px;
             display: flex;
             flex-direction: row;
@@ -91,13 +102,15 @@
         }
     }
 }
-.subtitulo-apple{
+
+.subtitulo-apple {
     text-align: center;
     font-size: 40px;
     font-weight: bolder;
     font-family: tituloh1;
-}  
-.present-inicio{
+}
+
+.present-inicio {
     grid-area: sams;
     background-image: url("../assets/img/samsunggggg.jpg");
     background-position: center;
@@ -109,39 +122,45 @@
     padding-top: 50px;
     margin-bottom: 50px;
 }
-.subtitulo-sams{
+
+.subtitulo-sams {
     text-align: center;
     font-size: 40px;
     font-weight: bolder;
     font-family: tituloh1;
     color: black;
 }
-.navbar-brand{
+
+.navbar-brand {
     font-family: tituloh1;
     margin-left: 20px;
     color: white;
     font-size: 28px;
     margin-right: 50px;
 }
-.dropdown-menu{
-    li{
-        a{
+
+.dropdown-menu {
+    li {
+        a {
             font-family: navbarfuente;
             color: black;
             font-size: 16px;
         }
     }
 }
-.nav-link{
+
+.nav-link {
     font-family: navbarfuente;
     font-size: 20px;
     color: white;
 }
-.container-cards{
+
+.container-cards {
     @include grid (repeat(3, 25%), repeat(2, auto), center, 100px, center);
-    justify-items: center; 
+    justify-items: center;
 }
-.cards{
+
+.cards {
     width: 15.625rem;
     background-color: white;
     padding: .3125rem;
@@ -149,23 +168,24 @@
     border-radius: .3125rem;
     justify-items: center;
     margin-bottom: 30px;
-    
 }
-.clase-img-iphone{
-    img{
+
+.clase-img-iphone {
+    img {
         width: 100%;
         object-fit: cover;
-        
+
     }
 }
-.cards{
-    div{
-        h3{
+
+.cards {
+    div {
+        h3 {
             padding: .0375rem 0rem;
         }
     }
 }
-.section-texto-principal{
+.section-texto-principal {
     text-align: center;
     font-size: 19px;
     font-family: navbarfuente;
@@ -174,116 +194,114 @@
     color: black;
     margin-top: 50px;
 }
+
 /*  INICIO ESTILOS CONTACTO */
 .contact-body {
-    background: url("../assets/img/tech-daily-UODNyThs0vg-unsplash.jpg") no-repeat;
-    background-size: 100%;
-}
-.main-contacto {
-    color: #36A0FF;
-    font-size: 27px;
-    padding: 30px;
-}
-.bigicon {
-    font-size: 35px;
-    color: #36A0FF;
+    background: #8e9eab;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eef2f3, #8e9eab);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 /* FOOTER DE CONTACTO */
 .footer-nueva {
-    background-color: lightgreen;
-    margin-top: 346px;
+    background-color: lightblue;
+    margin-top: 270px;
 }
+
 .texto-contacto {
     color: black;
     text-align: center;
 }
-.redes-contacto-nueva{
+
+.redes-contacto-nueva {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
+
 footer {
     background-color: lightgreen;
 }
+
 .presentacion-media {
     display: none;
 }
 
 /* INICIO DE MEDIA Q */
-@media (max-width:1351px){
-    .contact-body{
-        background-image: url("../assets/img/ifone-13-mini.jpg");
-        width: 100%;
-        background-size: cover;
-    }
-    .container-cards{
+@media (max-width:1351px) {
+    .container-cards {
         grid-template-columns: auto;
         display: flex;
         flex-wrap: wrap;
         gap: 50px;
     }
+
+    .navbar-toggler-icon {
+        background-image: url(https://cdn3.iconfinder.com/data/icons/basicolor-essentials/24/041_hamburger_menu-256.png);
+    }
 }
+
 @media (max-width:991px) {
     .footer-clean .item.social>a {
         margin-top: 40px;
     }
 }
+
 @media (max-width: 784px) {
     .container-cards {
         grid-template-columns: auto;
     }
 
-    .navbar {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
     .section-principal {
-        font-size: 15px;
+        font-size: 12px;
     }
 
     .section-texto-principal {
         font-size: 15px;
-        font-style: italic;
+        ;
     }
+
     .main-index {
         background-color: aliceblue;
     }
-    .contact-body{
+
+    .contact-body {
         background-image: none;
-        background-color: lightgreen;
-        
+        background: #8e9eab;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #eef2f3, #8e9eab);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     }
+
 }
 
 @media (max-width:767px) {
     .footer-clean .item.social>a {
         margin-top: 10px;
     }
+
     .footer-clean .item.social {
         text-align: center;
     }
+
     .footer-clean .item {
         text-align: center;
         padding-bottom: 20px;
     }
 
 }
+
 @media (max-width:584px) {
     footer {
         display: flex;
         flex-direction: column;
         width: 100%;
-    }
-}
-@media (max-width:375px) {
-    .navbar {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
     }
 }

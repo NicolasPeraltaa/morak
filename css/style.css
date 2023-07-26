@@ -372,7 +372,7 @@ footer {
 
 .present-apple {
   grid-area: apple;
-  background-image: url("../assets/img/photo-1606041011872-596597976b25.avif");
+  background-image: url("../assets/img/ifone-13-mini.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -491,25 +491,15 @@ footer {
 
 /*  INICIO ESTILOS CONTACTO */
 .contact-body {
-  background: url("../assets/img/tech-daily-UODNyThs0vg-unsplash.jpg") no-repeat;
-  background-size: 100%;
-}
-
-.main-contacto {
-  color: #36A0FF;
-  font-size: 27px;
-  padding: 30px;
-}
-
-.bigicon {
-  font-size: 35px;
-  color: #36A0FF;
+  background: #8e9eab; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 /* FOOTER DE CONTACTO */
 .footer-nueva {
-  background-color: lightgreen;
-  margin-top: 346px;
+  background-color: lightblue;
+  margin-top: 270px;
 }
 
 .texto-contacto {
@@ -534,16 +524,14 @@ footer {
 
 /* INICIO DE MEDIA Q */
 @media (max-width: 1351px) {
-  .contact-body {
-    background-image: url("../assets/img/ifone-13-mini.jpg");
-    width: 100%;
-    background-size: cover;
-  }
   .container-cards {
     grid-template-columns: auto;
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
+  }
+  .navbar-toggler-icon {
+    background-image: url(https://cdn3.iconfinder.com/data/icons/basicolor-essentials/24/041_hamburger_menu-256.png);
   }
 }
 @media (max-width: 991px) {
@@ -554,12 +542,6 @@ footer {
 @media (max-width: 784px) {
   .container-cards {
     grid-template-columns: auto;
-  }
-  .navbar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
   .section-principal {
     font-size: 15px;
@@ -573,7 +555,9 @@ footer {
   }
   .contact-body {
     background-image: none;
-    background-color: lightgreen;
+    background: #8e9eab; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 }
 @media (max-width: 767px) {
@@ -593,13 +577,6 @@ footer {
     display: flex;
     flex-direction: column;
     width: 100%;
-  }
-}
-@media (max-width: 375px) {
-  .navbar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
 }
 
