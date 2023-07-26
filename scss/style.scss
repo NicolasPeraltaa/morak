@@ -75,14 +75,12 @@
     padding-top: 50px;
     margin-bottom: 75px;
 }
-
 .present-apple {
     div {
         h3 {
             font-size: 40px;
             display: flex;
             flex-direction: row;
-            background-color: ligh;
             color: #000;
             margin-top: 155px;
             text-align: center;
@@ -108,6 +106,7 @@
     font-size: 40px;
     font-weight: bolder;
     font-family: tituloh1;
+    color: black;
 }
 
 .present-inicio {
@@ -253,7 +252,7 @@ footer {
 
 @media (max-width: 784px) {
     .container-cards {
-        grid-template-columns: auto;
+        grid-template-columns: repeat(2,20%);
     }
 
     .section-principal {

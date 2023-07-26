@@ -344,9 +344,12 @@ footer {
   src: url(../assets/fonts/Syne-SemiBold.ttf);
 }
 .back {
-  background: #8e9eab; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #8e9eab;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #eef2f3, #8e9eab);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .section-principal {
@@ -387,7 +390,6 @@ footer {
   font-size: 40px;
   display: flex;
   flex-direction: row;
-  background-color: ligh;
   color: #000;
   margin-top: 155px;
   text-align: center;
@@ -407,6 +409,7 @@ footer {
   font-size: 40px;
   font-weight: bolder;
   font-family: tituloh1;
+  color: black;
 }
 
 .present-inicio {
@@ -491,9 +494,12 @@ footer {
 
 /*  INICIO ESTILOS CONTACTO */
 .contact-body {
-  background: #8e9eab; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #8e9eab;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #eef2f3, #8e9eab);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 /* FOOTER DE CONTACTO */
@@ -541,23 +547,25 @@ footer {
 }
 @media (max-width: 784px) {
   .container-cards {
-    grid-template-columns: auto;
+    grid-template-columns: repeat(2, 20%);
   }
   .section-principal {
-    font-size: 15px;
+    font-size: 12px;
   }
   .section-texto-principal {
     font-size: 15px;
-    font-style: italic;
   }
   .main-index {
     background-color: aliceblue;
   }
   .contact-body {
     background-image: none;
-    background: #8e9eab; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #8e9eab;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eef2f3, #8e9eab);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 }
 @media (max-width: 767px) {
