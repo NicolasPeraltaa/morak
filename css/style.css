@@ -184,7 +184,7 @@ footer {
   padding: 50px 10px;
   background-color: #fff;
   color: black;
-  background-color: lightgreen;
+  background-color: white;
 }
 
 .footer-clean h3 {
@@ -360,6 +360,43 @@ footer {
   margin-top: 20px;
 }
 
+.section-principal .presentacion-14promax {
+  width: 800px;
+  height: 800px;
+  -webkit-animation: tilt-in-top-1 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: tilt-in-top-1 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes tilt-in-top-1 {
+  0% {
+    -webkit-transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+    transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0deg) translateY(0) skewY(0deg);
+    transform: rotateY(0deg) translateY(0) skewY(0deg);
+    opacity: 1;
+  }
+}
+@keyframes tilt-in-top-1 {
+  0% {
+    -webkit-transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+    transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0deg) translateY(0) skewY(0deg);
+    transform: rotateY(0deg) translateY(0) skewY(0deg);
+    opacity: 1;
+  }
+}
+.section-principal .titulo-14promax {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  font-size: 55px;
+}
+
 .present-apple {
   text-decoration: none;
 }
@@ -379,7 +416,7 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: fit-content;
+  width: 100%;
   border-radius: 90px 52px 52px 90px;
   overflow: hidden;
   padding-top: 50px;
@@ -388,28 +425,41 @@ footer {
 
 .present-apple div h3 {
   font-size: 40px;
-  display: flex;
-  flex-direction: row;
-  color: #000;
   margin-top: 155px;
   text-align: center;
+  color: white;
+  margin: 10%;
 }
 
 .present-inicio div h3 {
   font-size: 40px;
-  display: flex;
-  flex-direction: row;
   color: white;
   margin-top: 155px;
   text-align: center;
+  margin: 10%;
 }
 
-.subtitulo-apple {
+.present-inicio div .subtitulo-apple {
   text-align: center;
   font-size: 40px;
   font-weight: bolder;
   font-family: tituloh1;
   color: black;
+}
+
+.container-cards .cards h3 {
+  text-align: center;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.container-cards .cards p {
+  text-align: center;
+  font-size: 19px;
+  font-weight: 500;
+  color: black;
+  justify-content: center;
+  align-items: center;
 }
 
 .present-inicio {
@@ -425,7 +475,7 @@ footer {
   margin-bottom: 50px;
 }
 
-.subtitulo-sams {
+.present-inicio div .subtitulo-sams {
   text-align: center;
   font-size: 40px;
   font-weight: bolder;
@@ -503,6 +553,12 @@ footer {
 }
 
 /* FOOTER DE CONTACTO */
+.footer-clean {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
 .footer-nueva {
   background-color: lightblue;
   margin-top: 270px;
@@ -536,7 +592,7 @@ footer {
     flex-wrap: wrap;
     gap: 50px;
   }
-  .navbar-toggler-icon {
+  .navbar-toggler .navbar-toggler-icon {
     background-image: url(https://cdn3.iconfinder.com/data/icons/basicolor-essentials/24/041_hamburger_menu-256.png);
   }
 }
@@ -544,12 +600,20 @@ footer {
   .footer-clean .item.social > a {
     margin-top: 40px;
   }
+  .section-principal .presentacion-14promax {
+    width: auto;
+    height: 1000px;
+  }
+  .section-principal div p {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 @media (max-width: 784px) {
   .container-cards {
     grid-template-columns: repeat(2, 20%);
   }
-  .section-principal {
+  .main-index .section-principal {
     font-size: 12px;
   }
   .section-texto-principal {
@@ -567,6 +631,12 @@ footer {
     background: linear-gradient(to right, #eef2f3, #8e9eab);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
+  .present-apple div h3 {
+    font-size: 40px;
+    margin-top: 155px;
+    text-align: center;
+    color: black;
+  }
 }
 @media (max-width: 767px) {
   .footer-clean .item.social > a {
@@ -579,12 +649,31 @@ footer {
     text-align: center;
     padding-bottom: 20px;
   }
+  .section-principal .presentacion-14promax {
+    width: 500px;
+    height: 500px;
+  }
 }
 @media (max-width: 584px) {
   footer {
     display: flex;
     flex-direction: column;
     width: 100%;
+  }
+  .section-principal .presentacion-14promax {
+    width: auto;
+    height: 500px;
+  }
+  .section-principal div p {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    padding-top: 25px;
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 320px) {
+  .section-principal .presentacion-14promax {
+    width: auto;
+    height: 300px;
   }
 }
 
