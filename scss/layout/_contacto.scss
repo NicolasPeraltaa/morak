@@ -1,38 +1,50 @@
 /*  INICIO ESTILOS CONTACTO */
 .contact-body {
-    background: url("../assets/img/tech-daily-UODNyThs0vg-unsplash.jpg") no-repeat;
-    background-size: 100%;
-}
-.main-contacto {
-    color: #36A0FF;
-    font-size: 27px;
-    padding: 30px;
-}
-.bigicon {
-    font-size: 35px;
-    color: #36A0FF;
+    background: #8e9eab;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eef2f3, #8e9eab);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-/* FOOTER DE CONTACTO */
-.footer-nueva {
-    background-color: lightgreen;
-    margin-top: 346px;
+.main-contacto{
+    margin-top: 100px;
 }
+footer-clean{
+    display: flex;
+    justify-content: center;
+    background-color: $color-footer-contacto;
+}
+.footer-nueva {
+    background-color: lightblue;
+    margin-top: 270px;
+}
+
 .texto-contacto {
     color: black;
     text-align: center;
 }
-.redes-contacto-nueva{
+
+.redes-contacto-nueva {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-
-footer {
-    background-color: lightgreen;
-}
-
-.presentacion-media {
-    display: none;
+.parrafo-contacto{
+    h1{
+        display: flex;
+        justify-content: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    h2{
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+        padding: 15px;
+    }
+    h3{
+        @extend h2
+    }
 }

@@ -1,29 +1,56 @@
-.container-cards{
-    @include grid (repeat(3, 25%), repeat(2, auto), center, 100px, center); 
+.container-cards {
+    @include grid (repeat(3, 25%), repeat(2, auto), center, 100px, center);
+    justify-items: center;
 }
-.cards{
-    width: 15.625rem;
-    background-color: lightgreen;
-    padding: .3125rem;
+
+.cards {
+    width: 352px;
+    background-color: white;
+    padding: .625rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: .3125rem;
     justify-items: center;
     margin-bottom: 30px;
+    height: content;
+    
 }
-.clase-img-iphone{
-    img{
-        width: 100%;
-        object-fit: cover;
+.container-cards{
+    .cards{
+        h3{
+            text-align: center;
+            color: black;
+            margin-bottom: 20px;
+        }
     }
 }
-.cards{
-    div{
-        h3{
+.container-cards{
+    .cards{
+        p{
+            text-align: center;
+            font-size: 19px;
+            font-weight: 500;
+            color: black;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+.clase-img-iphone {
+    img {
+        width: 100%;
+        object-fit: cover;
+
+    }
+}
+
+.cards {
+    div {
+        h3 {
             padding: .0375rem 0rem;
         }
     }
 }
-.section-texto-principal{
+.section-texto-principal {
     text-align: center;
     font-size: 19px;
     font-family: navbarfuente;
@@ -31,4 +58,11 @@
     margin-bottom: 35px;
     color: black;
     margin-top: 50px;
+}
+div{
+    .iphone-14promax{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bold;
+        font-size: 35px;
+    }
 }

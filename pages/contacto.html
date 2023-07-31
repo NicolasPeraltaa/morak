@@ -7,12 +7,14 @@
     <title>MoraK | Contacto</title>
     <link rel="shortcut icon" href="../assets/img/viber.png" type="image/x-icon">
     <meta name="description"
-        content="Contáctanos para solicitar presupuestos, enviar tus teléfonos para reparación y resolver cualquier duda o consulta. Nuestro equipo estará encantado de asistirte y brindarte el mejor servicio. ¡Comunícate con nosotros hoy mismo y experimenta una atención al cliente excepcional!"/>
-    <meta name="keywords" content="Reparacion de telefonos, Reparacion de Iphones, Reparacion de Samsung, precios iphone, precios celulares"/>
+        content="Contáctanos para solicitar presupuestos, enviar tus teléfonos para reparación y resolver cualquier duda o consulta. Nuestro equipo estará encantado de asistirte y brindarte el mejor servicio. ¡Comunícate con nosotros hoy mismo y experimenta una atención al cliente excepcional!" />
+    <meta name="keywords"
+        content="Reparacion de telefonos, Reparacion de Iphones, Reparacion de Samsung, precios iphone, precios celulares" />
     <meta property="og:title" content="Contáctanos - Presupuestos y Servicios de Reparación">
     <meta property="og:site_name" content=MoraK>
     <meta property="og:url" content=>
-    <meta property="og:description" content="Ponte en contacto con nosotros para solicitar presupuestos, reparaciones de teléfonos y resolver cualquier duda. Nuestro equipo está listo para brindarte un servicio excepcional. ¡Confía en nosotros para todas tus necesidades de tecnología móvil!">
+    <meta property="og:description"
+        content="Ponte en contacto con nosotros para solicitar presupuestos, reparaciones de teléfonos y resolver cualquier duda. Nuestro equipo está listo para brindarte un servicio excepcional. ¡Confía en nosotros para todas tus necesidades de tecnología móvil!">
     <meta property="og:type" content=product.item>
     <meta property="og:image" content=>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -32,7 +34,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarScroll">
-                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
                         <li class="nav-item">
                             <a class="nav-link active text-white" aria-current="page" href="../index.html">HOME</a>
                         </li>
@@ -67,105 +69,60 @@
 
     <!-- inicio main -->
     <main class="main-contacto">
-        <!--Section: Contact v.2-->
-        <section class="mb-4">
+        <div class="parrafo-contacto">
+            <h1>CONTACTANOS PARA REPARACIONES O ENVIOS DE EQUIPOS COMPRADOS</h1>
+            <h2>Queres saber mas informacion sobre nuestros equipos? ¿Queres un presupuesto de reparacion? ¡Dejanos tus dudas!</h2>
+            <h3> Para mas infomracion no dudes en contactarnos al (+598 92 031 694)</h3>
+        </div>
+<!-- Wrapper container -->
+<div class="container py-4">
 
-            <!--Section heading-->
-            <h2 class="h1-responsive font-weight-bold text-center my-4 text-black">CONTACTANOS PARA REPARACIONES O
-                ENVIOS DE EQUIPOS COMPRADOS</h2>
-            <!--Section description-->
-            <p class="text-center w-responsive mx-auto mb-5 text-black">¿Queres saber mas informacion sobre nuestros
-                equipos? ¿Queres un presupuesto de reparacion? ¡Dejanos tus dudas!</p>
+    <!-- Bootstrap 5 starter form -->
+    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+  
+      <!-- Name input -->
+      <div class="mb-3">
+        <label class="form-label" for="name">Nombre</label>
+        <input class="form-control" id="name" type="text" data-sb-validations="required" />
+        <div class="invalid-feedback" data-sb-feedback="name:required">Casilla obligatoria</div>
+      </div>
+  
+      <!-- Email address input -->
+      <div class="mb-3">
+        <label class="form-label" for="emailAddress">Direccion de email</label>
+        <input class="form-control" id="emailAddress" type="email" data-sb-validations="required, email" />
+        <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Casilla obligatoria</div>
+        <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Esta direccion de correo electronico no es valida.</div>
+      </div>
+  
+      <!-- Message input -->
+      <div class="mb-3">
+        <label class="form-label" for="message">Mensaje</label>
+        <textarea class="form-control" id="message" type="text" placeholder="Maximo tiempo de demora en respuesta es de 48 horas." style="height: 10rem;" data-sb-validations="required"></textarea>
+        <div class="invalid-feedback" data-sb-feedback="message:required">Casilla obligatoria</div>
+      </div>
+  
+      <!-- Form submissions success message -->
+      <div class="d-none" id="submitSuccessMessage">
+        <div class="text-center mb-3">Mensaje Enviado!</div>
+      </div>
+  
+      <!-- Form submissions error message -->
+      <div class="d-none" id="submitErrorMessage">
+        <div class="text-center text-danger mb-3">Error al enviar tu consulta!</div>
+      </div>
+  
+      <!-- Form submit button -->
+      <div class="d-grid">
+        <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">ENVIAR</button>
+      </div>
+  
+    </form>
+  
+  </div>
 
-            <div class="row">
-
-                <!--Grid column-->
-                <div class="col-md-9 mb-md-0 mb-5">
-                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-
-                        <!--Grid row-->
-                        <div class="row">
-
-                            <!--Grid column-->
-                            <div class="col-md-6">
-                                <div class="md-form mb-0 text-black">
-                                    <input type="text" id="name" name="name" class="form-control">
-                                    <label for="name" class="">Nombre</label>
-                                </div>
-                            </div>
-                            <!--Grid column-->
-
-                            <!--Grid column-->
-                            <div class="col-md-6">
-                                <div class="md-form mb-0 text-black">
-                                    <input type="text" id="email" name="email" class="form-control">
-                                    <label for="email" class="">Email</label>
-                                </div>
-                            </div>
-                            <!--Grid column-->
-
-                        </div>
-                        <!--Grid row-->
-
-                        <!--Grid row-->
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="md-form mb-0 text-black">
-                                    <input type="text" id="subject" name="subject" class="form-control">
-                                    <label for="subject" class="">Asunto</label>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Grid row-->
-
-                        <!--Grid row-->
-                        <div class="row">
-
-                            <!--Grid column-->
-                            <div class="col-md-12">
-
-                                <div class="md-form text-black">
-                                    <textarea type="text" id="message" name="message" rows="2"
-                                        class="form-control md-textarea"></textarea>
-                                    <label for="message">Mensaje</label>
-                                </div>
-
-                            </div>
-                        </div>
-                        <!--Grid row-->
-
-                    </form>
-
-                    <div class="text-center text-md-left">
-                        <a class="btn btn-primary"
-                            onclick="document.getElementById('contact-form').submit();">ENVIAR</a>
-                    </div>
-                    <div class="status"></div>
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-md-3 text-center">
-                    <ul class="list-unstyled mb-0 font-weight-bold text-black">
-                        <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                            <p>Ciudad de la Costa 1498, Canelones. UY.</p>
-                        </li>
-
-                        <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                            <p>+598 92 031 694</p>
-                        </li>
-
-                        <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                            <p>moraKtienda@gmail.com</p>
-                        </li>
-                    </ul>
-                </div>
-                <!--Grid column-->
-
-            </div>
-
-        </section>
-        <!--Section: Contact v.2-->
+  <!-- SB Forms JS -->
+  <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </main>
     <!-- fin de main -->
 
