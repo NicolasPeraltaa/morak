@@ -53,6 +53,31 @@
         font-size: 55px;
     }
 }
+.section-principal{
+    div{
+        h1{
+            font-size: 35px;
+            font-weight: bold;
+            text-shadow:
+            1px 1px 2px black,
+            0 0 1em black,
+            0 0 0.2em black;
+            color: white;
+            margin-top: 50px;
+            margin-bottom: 60px;
+        }
+    }
+}
+.section-principal{
+    div{
+        .titulo-random{
+            margin-top: 80px;
+            margin-bottom: 80px;
+            font-weight: 400;
+            font-size: 50px;
+        }
+    }
+}
 .section-principal {
     div {
         font-weight: bolder;
