@@ -25,5 +25,3 @@ En mi caso, cree una pagina de venta y reparacion de telefonos celulares la cual
 
 - [@NicolasPeraltaa](https://github.com/NicolasPeraltaa)
 
-https://raw.githubusercontent.com/usuario/morak/main/assets/img/23-237381_java-html-language-logo-png-transparent-png.png
-
